@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: trademate-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: DATABASE_TYPE
+        value: mongodb
+      - key: ALPHA_VANTAGE_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false 
