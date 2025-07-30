@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
+    rootDir: server
     envVars:
       - key: DATABASE_TYPE
         value: mongodb
