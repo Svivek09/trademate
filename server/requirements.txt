@@ -1,8 +1,8 @@
 fastapi==0.104.1
-uvicorn==0.24.0
+uvicorn[standard]==0.24.0
 python-dotenv==1.0.0
 requests==2.31.0
-pandas==2.1.3
+pandas==2.0.3
 numpy==1.24.3
 yfinance==0.2.18
 alpha-vantage==2.3.1
@@ -14,7 +14,5 @@ python-dateutil==2.8.2
 aiofiles==23.2.1
 httpx==0.25.2
 websockets==12.0
-
-# MongoDB driver (essential for deployment)
 motor==3.1.1
 pymongo==4.3.3 
